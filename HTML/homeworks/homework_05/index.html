@@ -24,16 +24,13 @@
         width: 250px;
         height: 70px;
       }
-      .abauth {
-        
-      }
     </style>
   </head>
   <body>
     
       <h1><center>Cleverland</center></h1>
       <h2><center>Формы. Элементы форм</center></h2>
-      <form action="" name="first-form">
+      <form action="" id="first-form">
         <div class="form-container">
           <fieldset>
             <legend>Данные пользователя</legend>
@@ -42,29 +39,30 @@
                 <tr>
                   <td>Логин:</td>
                   <td>
-                    <input type="text" name="login" placeholder="Login">
+                    <input type="text" name="login" placeholder="Login" form="first-form">
                   </td>
                 </tr>
                 <tr>
                   <td>Пароль:</td>
                   <td>
-                    <input type="password" name="pass" placeholder="Password">
+                    <input type="password" name="pass" placeholder="Password" form="first-form">
                   </td>
                 </tr>
               </tbody>
             </table>
-            <p><input type="submit" value="Вход"></p>
+            <p><input type="submit" value="Вход" form="first-form"></p>
         </div>
         <div class="form-container">
           <fieldset>
             <legend>Пожелания</legend>
             <p>
-              <select class="city" name="city" id="first-form">
+              <select class="city" name="city" form="first-form">
                 <option value="Orsha">Орша</option>
+                <option value="Orsha">Минск</option>
               </select>
             </p>
             <p>
-              <select class="wishes" name="wishes" id="first-form" size="3">
+              <select class="wishes" name="wishes" form="first-form" size="3">
                 <option value="">Машина</option>
                 <option value="">Свой дом</option>
                 <option value="">Квартира</option>
@@ -78,8 +76,8 @@
               <label><input type="checkbox">Отдыхать</label>
               <label><input type="checkbox">Учиться</label>
             </p>
-            <p><textarea name="" id="" cols="30" rows="10" placeholder="Много текста"></textarea></p>
-            <p><button type="submit">Отправить</button></p>
+            <p><textarea name="textarea" id="" cols="30" rows="10" placeholder="Много текста" form="first-form"></textarea></p>
+            <p><button type="submit" form="first-form">Отправить</button></p>
             <p></p>
         </div>
       </form>
