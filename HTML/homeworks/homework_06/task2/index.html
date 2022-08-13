@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms.Part2</title>
+</head>
+<body>
+    <h2><font face="tahoma">Запись на курсы</font></h2>
+    <hr>
+    <form action="#" id="form">
+        <p>
+            <div>Имя:</div>
+            <div><input type="text" placeholder="Алексей" form="form"></div>
+        </p>
+        <p>
+            <div>Языки программирования:</div>
+            <div>
+                <label><input type="radio" name="langprog" value="l1" form="form">C++</label>
+            </div>
+            <div>
+                <label><input type="radio" name="langprog" value="l2" checked form="form">PHP</label>
+            </div>
+            <div>
+                <label><input type="radio" name="langprog" value="l3" form="form">Python</label>
+            </div>
+        </p>
+        <p>
+            <div>Дополнительная информация:</div>
+            <div>
+                <textarea name="info" cols="30" rows="5" placeholder="Есть опыт программирования на С++" form="form"></textarea>
+            </div>
+        </p>
+        <p>
+            <div>Секретное слово:</div>
+            <div>
+                <input type="password" name="secretword" form="form">
+            </div>
+        </p>
+        <p>
+            <button type="submit" form="form">Отправить</button> <button type="reset" form="form">Очистить</button>
+        </p>
+    </form>
+</body>
+</html>
