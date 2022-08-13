@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms. Part2</title>
+    <style>
+      form {
+        width: 500px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" id="form">
+      <fieldset>
+        <legend>Регистрационная форма пользователя</legend>
+        <p>
+          <label>Имя: <input type="text" /></label>
+        </p>
+        <div>
+          <p>Укажите возраст: <input list="age" /></p>
+          <datalist id="age">
+            <option>10-15</option>
+            <option>15-20</option>
+            <option>25-30</option>
+            <option>35-40</option>
+            <option>Старше 40</option>
+          </datalist>
+        </div>
+        <p>
+          <label
+            >Укажите пол:
+            <span> Мужской<input type="radio" name="gender" id="" /></span>
+            <span> Женский<input type="radio" name="gender" id="" /></span>
+          </label>
+        </p>
+        <p>
+          Страна проживания:
+          <select name="country" form="form">
+            <option value="BY">Беларусь</option>
+            <option value="RU">РФ</option>
+            <option value="other">Другое</option>
+          </select>
+        </p>
+        <p>
+          Владение языками: 
+          <label
+            >русский<input type="checkbox" name="lang" form="" value=""
+          /></label>
+          <label
+            >белорусский<input type="checkbox" name="lang" form="" value=""
+          /></label>
+          <label
+            >английский<input type="checkbox" name="lang" form="" value=""
+          /></label>
+        </p>
+        <p>
+          <table>
+            <tbody>
+              <tr>
+                <td>Фото профиля</td>
+                <td><input type="file" name="photo" id=""></td>
+              </tr>
+              <tr>
+                <td>Введите логин:</td>
+                <td>
+                  <input type="text" name="login" required placeholder="" form="form">
+                </td>
+              </tr>
+              <tr>
+                <td>Введите пароль:</td>
+                <td>
+                  <input required type="password" name="pass1" placeholder="" form="form">
+                </td>
+              </tr>
+              <tr>
+                <td>Повторите пароль:</td>
+                <td>
+                  <input required type="password" name="pass2" placeholder="" form="form">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+      </fieldset>
+      <p><button type="submit">Отправить</button> <button type="reset">Сброс</button></p>
+    </form>
+  </body>
+</html>
