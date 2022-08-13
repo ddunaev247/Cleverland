@@ -17,10 +17,10 @@
       <fieldset>
         <legend>Регистрационная форма пользователя</legend>
         <p>
-          <label>Имя: <input type="text" /></label>
+          <label>Имя: <input type="text" form="form"/></label>
         </p>
         <div>
-          <p>Укажите возраст: <input list="age" /></p>
+          <p>Укажите возраст: <input list="age" form="form"/></p>
           <datalist id="age">
             <option>10-15</option>
             <option>15-20</option>
@@ -30,11 +30,9 @@
           </datalist>
         </div>
         <p>
-          <label
-            >Укажите пол:
-            <span> Мужской<input type="radio" name="gender" id="" /></span>
-            <span> Женский<input type="radio" name="gender" id="" /></span>
-          </label>
+            Укажите пол: 
+          <label>Мужской<input type="radio" name="gender" value="male" form="form"/></label>
+          <label>Женский<input type="radio" name="gender" value="female" form="form"/></label>
         </p>
         <p>
           Страна проживания:
@@ -46,22 +44,16 @@
         </p>
         <p>
           Владение языками: 
-          <label
-            >русский<input type="checkbox" name="lang" form="" value=""
-          /></label>
-          <label
-            >белорусский<input type="checkbox" name="lang" form="" value=""
-          /></label>
-          <label
-            >английский<input type="checkbox" name="lang" form="" value=""
-          /></label>
+          <label>русский<input type="checkbox" name="lang" form="form" value=""/></label>
+          <label>белорусский<input type="checkbox" name="lang" form="form" value=""/></label>
+          <label>английский<input type="checkbox" name="lang" form="form" value=""/></label>
         </p>
         <p>
           <table>
             <tbody>
               <tr>
                 <td>Фото профиля</td>
-                <td><input type="file" name="photo" id=""></td>
+                <td><input type="file" name="photo" form="form"></td>
               </tr>
               <tr>
                 <td>Введите логин:</td>
@@ -84,7 +76,7 @@
             </tbody>
           </table>
       </fieldset>
-      <p><button type="submit">Отправить</button> <button type="reset">Сброс</button></p>
+      <p><button type="submit" form="form">Отправить</button> <button type="reset" form="form">Сброс</button></p>
     </form>
   </body>
 </html>
