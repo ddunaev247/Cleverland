@@ -19,7 +19,7 @@
         <fieldset>
             <p>
                 <div>Имя:</div>
-                <div><input type="text" placeholder="Алексей"></div>
+                <div><input type="text" value="Алексей" name="name"></div>
             </p>
             <p>
                 <div>Языки программирования:</div>
@@ -36,13 +36,13 @@
             <p>
                 <div>Дополнительная информация:</div>
                 <div>
-                    <textarea name="info" cols="30" rows="5" placeholder="Есть опыт программирования на С++"></textarea>
+                    <textarea name="info" cols="30" rows="5">Есть опыт программирования на С++</textarea>
                 </div>
             </p>
             <p>
                 <div>Секретное слово:</div>
                 <div>
-                    <input type="password" name="secretword">
+                    <input type="password" name="secretword" value="nopassword">
                 </div>
             </p>
             <p>
@@ -63,7 +63,7 @@
             <p>
                 <label>Область: 
                     <select name="region">
-                        <option value="br">Брестская</option>
+                        <option value="br" selected>Брестская</option>
                         <option value="mn">Минская</option>
                         <option value="gm">Гомельская</option>
                         <option value="mg">Могилевская</option>
