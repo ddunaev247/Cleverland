@@ -17,10 +17,10 @@
       <fieldset>
         <legend>Регистрационная форма пользователя</legend>
         <p>
-          <label>Имя: <input type="text" form="form"/></label>
+          <label>Имя: <input type="text"/></label>
         </p>
         <div>
-          <p>Укажите возраст: <input list="age" form="form"/></p>
+          <p>Укажите возраст: <input list="age"/></p>
           <datalist id="age">
             <option>10-15</option>
             <option>15-20</option>
@@ -31,12 +31,12 @@
         </div>
         <p>
             Укажите пол: 
-          <label>Мужской<input type="radio" name="gender" value="male" form="form"/></label>
-          <label>Женский<input type="radio" name="gender" value="female" form="form"/></label>
+          <label>Мужской<input type="radio" name="gender" value="male"/></label>
+          <label>Женский<input type="radio" name="gender" value="female"/></label>
         </p>
         <p>
           Страна проживания:
-          <select name="country" form="form">
+          <select name="country">
             <option value="BY">Беларусь</option>
             <option value="RU">РФ</option>
             <option value="other">Другое</option>
@@ -44,39 +44,39 @@
         </p>
         <p>
           Владение языками: 
-          <label>русский<input type="checkbox" name="lang" form="form" value=""/></label>
-          <label>белорусский<input type="checkbox" name="lang" form="form" value=""/></label>
-          <label>английский<input type="checkbox" name="lang" form="form" value=""/></label>
+          <label>русский<input type="checkbox" name="lang" value="ru"/></label>
+          <label>белорусский<input type="checkbox" name="lang" value="by"/></label>
+          <label>английский<input type="checkbox" name="lang" value="en"/></label>
         </p>
         <p>
           <table>
             <tbody>
               <tr>
                 <td>Фото профиля</td>
-                <td><input type="file" name="photo" form="form"></td>
+                <td><input type="file" name="photo"></td>
               </tr>
               <tr>
                 <td>Введите логин:</td>
                 <td>
-                  <input type="text" name="login" required placeholder="" form="form">
+                  <input type="text" name="login" required placeholder="">
                 </td>
               </tr>
               <tr>
                 <td>Введите пароль:</td>
                 <td>
-                  <input required type="password" name="pass1" placeholder="" form="form">
+                  <input required type="password" name="pass1" placeholder="">
                 </td>
               </tr>
               <tr>
                 <td>Повторите пароль:</td>
                 <td>
-                  <input required type="password" name="pass2" placeholder="" form="form">
+                  <input required type="password" name="pass2" placeholder="">
                 </td>
               </tr>
             </tbody>
           </table>
       </fieldset>
-      <p><button type="submit" form="form">Отправить</button> <button type="reset" form="form">Сброс</button></p>
+      <p><button type="submit">Отправить</button> <button type="reset">Сброс</button></p>
     </form>
   </body>
 </html>
