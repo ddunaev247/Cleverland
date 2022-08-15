@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+    <title>Forms.Part2</title>
+</head>
+<body>
+    <h2><font face="tahoma">Запись на курсы</font></h2>
+    <hr>
+    <form action="#" id="form">
+        <fieldset>
+            <p>
+                <div>Имя:</div>
+                <div><input type="text" value="Алексей" name="name"></div>
+            </p>
+            <p>
+                <div>Языки программирования:</div>
+                <div>
+                    <label><input type="radio" name="langprog" value="l1">C++</label>
+                </div>
+                <div>
+                    <label><input type="radio" name="langprog" value="l2" checked>PHP</label>
+                </div>
+                <div>
+                    <label><input type="radio" name="langprog" value="l3">Python</label>
+                </div>
+            </p>
+            <p>
+                <div>Дополнительная информация:</div>
+                <div>
+                    <textarea name="info" cols="30" rows="5">Есть опыт программирования на С++</textarea>
+                </div>
+            </p>
+            <p>
+                <div>Секретное слово:</div>
+                <div>
+                    <input type="password" name="secretword" value="nopassword">
+                </div>
+            </p>
+            <p>
+                <button type="submit">Отправить</button> <button type="reset">Очистить</button>
+            </p>
+        </fieldset>
+    </form>
+    <hr>
+    <form action="#" id="form2">
+        <fieldset>
+            <legend>Параметры автомобиля</legend>
+            <p>
+                <label>Марка автомобиля: <input type="text" name="brend"></label>
+            </p>
+            <p>
+                <label>Объем двигателя, см<sup>3</sup> <input type="number" name="volume" placeholder="1900"></label>
+            </p>
+            <p>
+                <label>Область: 
+                    <select name="region">
+                        <option value="br" selected>Брестская</option>
+                        <option value="mn">Минская</option>
+                        <option value="gm">Гомельская</option>
+                        <option value="mg">Могилевская</option>
+                        <option value="vt">Витебская</option>
+                        <option value="gr">Гродненская</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <div>Тип КПП</div>
+                <div>
+                    <label><input type="radio" name="transmission" value="auto">Автомат</label>
+                </div>
+                <div>
+                    <label><input type="radio" name="transmission" value="mech">Механика</label>
+                </div>
+            </p>
+            <p>
+                <div>Двигатель</div>
+                <div>
+                    <label><input type="checkbox" name="engine" value="e1">Электро</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="engine" value="e2">Дизель</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="engine" value="e3">Бензин</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="engine" value="e4">Пропан-бутан</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="engine" value="e5">Метан</label>
+                </div>
+            </p>
+            <p>
+                <div>Описание</div>
+                <textarea name="description" cols="30" rows="8"></textarea>
+            </p>
+            <p>
+                <button type="submit">Отправить</button> <button type="reset">Очистить</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
