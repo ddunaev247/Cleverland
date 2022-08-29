@@ -4,39 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Музыка</title>
 </head>
 <body>
-    <header>
-        <img src="./images/online-kino_poster.jpg" alt="Онлайн Кинотеатр" align="center">
-        <nav>
-            <a href="index.html">Главная</a> |
-            <a href="audio.html">Музыка</a> |
-            <a href="video.html">Фильмы</a> |
-        </nav>
-    </header>
-    <main>
-        <ul>
-            <li>
-                <p>Metallica. Nothing Else Matters</p>
-                <audio controls>
-                    <source src="./audio/Metallica-Nothing Else Matters.mp3" type="audio/mp3">
-                </audio>
-            </li>
-            <li>
-                <p>Ария. Закат</p>
-                <audio controls>
-                    <source src="./audio/arija_-_zakat.mp3" type="audio/mp3">
-                </audio>
-            </li>
-            <li>
-                <p>Rammstein. Ohne dich</p>
-                <audio controls>
-                    <source src="./audio/rammstein-ohne-dich.mp3" type="audio/mp3">
-                </audio>
-            </li>
-        </ul>
-    </main>
+    <table wigth="100%" bgcolor="black">
+        <col width="20%">
+        <col width="60%" >
+        <col width="20%">
+        <tbody>
+            <tr>
+                <td></td>
+                <td><img src="./images/online-kino_poster.jpg" alt="online-kino_poster"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center" height="100">
+                    <nav>
+                        <font face="Arial" size="4" color="white"><a href="index.html" style="color: white">Главная</a> |</font>
+                        <font face="Arial" size="4" color="white"><a href="audio.html" style="color: white">Музыка</a> |</font>
+                        <font face="Arial" size="4" color="white"><a href="video.html" style="color: white">Фильмы</a> |</font>
+                    </nav>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center">
+                    <ul style="list-style: none">
+                        <li>
+                            <p><font face="Tahoma" size="6" color="white">Metallica. Nothing Else Matters</font></p>
+                            <audio controls>
+                                <source src="./audio/Metallica-Nothing Else Matters.mp3" type="audio/mp3">
+                            </audio>
+                        </li>
+                        <li>
+                            <p><font face="Tahoma"  size="6" color="white">Ария. Закат</font></p>
+                            <audio controls>
+                                <source src="./audio/arija_-_zakat.mp3" type="audio/mp3">
+                            </audio>
+                        </li>
+                        <li>
+                            <p><font face="Tahoma"  size="6" color="white">Rammstein. Ohne dich</font></p>
+                            <audio controls>
+                                <source src="./audio/rammstein-ohne-dich.mp3" type="audio/mp3">
+                            </audio>
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
