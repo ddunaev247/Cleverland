@@ -7,9 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Lobster&display=swap" rel="stylesheet">
     <title>Контакты</title>
     <style>
-        * {
-         box-sizing: border-box; 
-         }   
          table, tr, td {
             margin: 0;
             padding: 0;
@@ -18,29 +15,16 @@
             margin-left: 35%;
             margin-right: 35%;
          }
-         div {
-            padding-bottom: 5px;
-         }
          ul {
             list-style:none;
-        }
-        a {
-            text-decoration: none;
-        }
-        .adress {
-            display: flex;
-            justify-content: space-between;
-            padding-left: 15%;
-            padding-right: 15%;
-            font-size: 24px;
         }
     </style>
 </head>
 <body>
     <hr>
-    <header class="header">
+    <header>
         <nav>
-            <ul class="menu">
+            <ul>
                 <li><a href="./index.html">Главная</a></li>
                 <li><a href="./catalog.html">Каталог</a></li>
                 <li><a href="./contacts.html">Контакты</a></li>
@@ -48,7 +32,7 @@
         </nav>
     </header>
     <hr>
-    <main class="content">
+    <main>
         <h1><font face="Lobster"><ins><center>Напишите нам</center></ins></font></h1>
         <hr>
         <div class="form">
@@ -157,23 +141,20 @@
         </div>
     </main>
     <hr>
-    <footer class="footer">
-        <div>
-            <h4><center>Адреса и контакты</center></h4>
+    <footer>
+        <h4><center>Адреса и контакты</center></h4>
             <adress>
-                <div class="adress">
-                    <ul>
-                        <li>Телефон: <a href="tel:+375257778899">+375257778899</a>
-                        <li>E-mail: <a href="mailto:step2step@gmail.com">step2step@gmail.com</a></li>
-                        <li>Юридический адрес: <a href="https://yandex.by/maps/157/minsk/house/Zk4YcAdlTEEEQFtpfXR2eHxrYA==/?ll=27.606076%2C53.878682&z=18.15" target="_blank">г. Минск, пр. Партизанский, д. 20</a></li>
-                    </ul>
-                    <div>
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1032fc7281ce45861564736a33338a505872a1bc7b9d1dd55b3c5da602787de2&amp;width=550&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
-                    </div>
-                </div>
+                <ul align="center">
+                    <li>Телефон: <a href="tel:+375257778899">+375257778899</a>
+                    <li>E-mail: <a href="mailto:step2step@gmail.com">step2step@gmail.com</a></li>
+                    <li>Юридический адрес: <a href="https://yandex.by/maps/157/minsk/house/Zk4YcAdlTEEEQFtpfXR2eHxrYA==/?ll=27.606076%2C53.878682&z=18.15" target="_blank">г. Минск, пр. Партизанский, д. 20</a></li>
+                </ul>
+                <div align="center">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1032fc7281ce45861564736a33338a505872a1bc7b9d1dd55b3c5da602787de2&amp;width=550&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>    
             </adress>
-        </div>
-        <small><center>STEP_2_STEP © 2022 «Все права защищены»</center></small>
+            <hr>
+            <small><center>STEP_2_STEP © 2022 «Все права защищены»</center></small>    
     </footer>
     <hr>
 </body>
