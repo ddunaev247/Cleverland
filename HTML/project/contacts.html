@@ -6,152 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Lobster&display=swap" rel="stylesheet">
     <title>Контакты</title>
-    <style>
-         table, tr, td {
-            margin: 0;
-            padding: 0;
-         }
-         .form {
-            margin-left: 35%;
-            margin-right: 35%;
-         }
-         ul {
-            list-style:none;
-        }
-    </style>
 </head>
 <body>
     <hr>
     <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Главная</a></li>
-                <li><a href="./catalog.html">Каталог</a></li>
-                <li><a href="./contacts.html">Контакты</a></li>
-            </ul>
+        <nav align="center">
+            <a href="./index.html"><font size="4" face="tahoma"><b>ГЛАВНАЯ</b></font></a>
+            <a href="./catalog.html"><font size="4" face="tahoma"><b>КАТАЛОГ</b></font></a>
+            <a href="./contacts.html"><font size="4" face="tahoma"><b>КОНТАКТЫ</b></font></a>
         </nav>
     </header>
     <hr>
     <main>
         <h1><font face="Lobster"><ins><center>Напишите нам</center></ins></font></h1>
         <hr>
-        <div class="form">
-            <form action="#">
-                <fieldset>
-                    <legend>Вопрос по товару</legend>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <label>Имя: </label>
-                                </td>
-                                <td>
-                                    <div><input type="text" name="name" size="43"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>E-mail: </label>
-                                </td>
-                                <td>
-                                    <div><input type="email" name="email" size="43"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Номер телефона:</label>
-                                </td>
-                                <td>
-                                    <div><input type="tel" name="tel" pattern="[0-9]{9}" value="375-**-***-**-**" size="43"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Тема: </label>
-                                </td>
-                                <td>
-                                    <div><input type="text" name="subject" size="43"></div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div>
-                        <label>Введите текст</label><br>
-                        <textarea name="text" cols="60" rows="10"></textarea>
-                    </div>
-                    <div>
-                        <label>Выбор товара:</label>
-                        <select name="product">
-                            <option value="product_1" selected>Кроссовки №1</option>
-                            <option value="product_2">Кроссовки №2</option>
-                            <option value="product_3">Кроссовки №3</option>
-                            <option value="product_4">Кроссовки №4</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label>Выбор способа оплаты:</label><br>
-                        <label>Наличными<input type="radio" name="payment" value="cash"></label>
-                        <label>Картой<input type="radio" name="payment" value="card"></label>
-                        <label>Онлайн<input type="radio" name="payment" value="online" checked></label>
-                    </div>
-                    <div>
-                        <button type="reset">Очистить</button>
-                        <button type="submit">Отправить</button>
-                    </div>
-                </fieldset>
-            </form>
-            <div class="comment">
-                <form action="#">
-                    <fieldset>
-                        <legend>Отзыв</legend>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <label>Имя: </label>
-                                    </td>
-                                    <td>
-                                        <div><input type="text" name="name" size="49"></div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label>E-mail: </label>
-                                    </td>
-                                    <td>
-                                        <div><input type="email" name="email" size="49"></div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <textarea name="comment-text" cols="60" rows="10">Текст отзыва</textarea>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <button type="reset">Очистить</button>
-                                    </td>
-                                    <td>
-                                        <button type="submit">Опубликовать</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
+        <table wigth="100%">
+            <col width="40%">
+            <col width="20%" >
+            <col width="40%">
+            <tr>
+                <td></td>
+                <td>
+                    <form action="#">
+                        <fieldset>
+                            <legend>Вопрос по товару</legend>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label>Имя: </label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="name" size="46">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>E-mail: </label>
+                                        </td>
+                                        <td>
+                                            <input type="email" name="email" size="46">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>Номер телефона:</label>
+                                        </td>
+                                        <td>
+                                            <input type="tel" name="tel" pattern="[0-9]{9}" value="375-**-***-**-**" size="46">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>Тема: </label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="subject" size="46">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <label>Введите текст</label><br>
+                                <textarea name="text" cols="60" rows="10"></textarea>
+                            </div>
+                            <div>
+                                <label>Выбор товара:</label>
+                                <select name="product">
+                                    <option value="product_1" selected>Кроссовки №1</option>
+                                    <option value="product_2">Кроссовки №2</option>
+                                    <option value="product_3">Кроссовки №3</option>
+                                    <option value="product_4">Кроссовки №4</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Выбор способа оплаты:</label><br>
+                                <label>Наличными<input type="radio" name="payment" value="cash"></label>
+                                <label>Картой<input type="radio" name="payment" value="card"></label>
+                                <label>Онлайн<input type="radio" name="payment" value="online" checked></label>
+                            </div>
+                            <div>
+                                <button type="reset">Очистить</button>
+                                <button type="submit">Отправить</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <form action="#">
+                        <fieldset>
+                            <legend>Отзыв</legend>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label>Имя: </label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="name" size="52">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>E-mail: </label>
+                                        </td>
+                                        <td>
+                                            <input type="email" name="email" size="52">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <textarea name="comment-text" cols="60" rows="10">Текст отзыва</textarea>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button type="reset">Очистить</button>
+                                        </td>
+                                        <td>
+                                            <button type="submit">Опубликовать</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </fieldset>
+                    </form>
+                </td>
+                <td></td>
+            </tr>
+        </table>
     </main>
     <hr>
     <footer>
-        <h4><center>Адреса и контакты</center></h4>
+        <h2><font face="trebuchet ms"><center>Адреса и контакты</center></font></h2>
             <adress>
-                <ul align="center">
+                <ul align="center" type="none">
                     <li>Телефон: <a href="tel:+375257778899">+375257778899</a>
                     <li>E-mail: <a href="mailto:step2step@gmail.com">step2step@gmail.com</a></li>
                     <li>Юридический адрес: <a href="https://yandex.by/maps/157/minsk/house/Zk4YcAdlTEEEQFtpfXR2eHxrYA==/?ll=27.606076%2C53.878682&z=18.15" target="_blank">г. Минск, пр. Партизанский, д. 20</a></li>
                 </ul>
                 <div align="center">
                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1032fc7281ce45861564736a33338a505872a1bc7b9d1dd55b3c5da602787de2&amp;width=550&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
-                </div>    
+                </div>
             </adress>
             <hr>
             <small><center>STEP_2_STEP © 2022 «Все права защищены»</center></small>    
