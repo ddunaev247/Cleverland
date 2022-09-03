@@ -1,0 +1,30 @@
+.boxshadow {
+  position: relative;
+  width: 350px;
+  padding: 30px;
+  font-family: "bookman old style";
+  font-size: 30px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 30px;
+  background: linear-gradient(to right, #fff, #eee, #fff);
+}
+.boxshadow::after,.boxshadow::before {
+  content: "";
+  display: block; /*Отображать как блочный элемент*/
+  position: absolute; /*Абсолютное позиционирование блока*/
+  width: 92%;/*Ширина*/
+  height: 67%; /*Высота*/
+  top: 0px; /*Смещение сверху*/
+  left: 0px; /*Смещение слева*/
+  right: 0px; /*Смещение справа*/
+  bottom: 0px; /*Смещение снизу*/
+  margin: auto; /*отступы*/
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);/*тень блока*/
+  z-index: -1; /*задает размещением по z-оси ниже блока   */
+  transform: rotate(5deg);/*поворот на 5 градусов*/
+}
+.boxshadow::after {
+  transform: rotate(-5deg);
+}

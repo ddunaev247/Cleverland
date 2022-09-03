@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Селектор псевдоклассов</title>
+    <style>
+        .bottom_1 {
+            margin-top: 800px;
+        }
+        a {
+            font-family: verdana;
+            font-size: 14pt;
+        }
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color:gray;
+        }
+        a:hover {
+            color:green;
+        }
+        a:active {
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <br><br>
+    <a href="#span_1">Я внутристраничная ссылка. Я становлюсь зеленой
+        при наведении на меня курсора мыши.</a><br><br>
+    <div class="bottom_1">
+        <a name="span_1"></a>На эту насть страницы ведет внутристраничная гиперссылка
+    </div>
+    <div class="bottom_1"></div>
+</body>
+</html>

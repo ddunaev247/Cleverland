@@ -1,0 +1,85 @@
+h1 {
+  padding: 20px;
+  background-color: #dddddd;
+  font-size: 28pt;
+}
+
+p:nth-of-type(2) {
+  font-weight: bold;
+}
+
+a[href^="#"] {
+  font-size: 16pt;
+  font-weight: bold;
+  color: #777777;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+a[href^="#"]:hover {
+  color: #1d0d77;
+}
+
+h2 {
+  padding: 10px;
+  background-color: #dddddd;
+  color: #2d4764;
+  border: 1px dotted #444;
+}
+
+h2:nth-of-type(2) {
+  color: #345375;
+  border: 1px dashed #444;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+h3 {
+  margin-left: 40px;
+}
+
+h3:nth-of-type(even) a {
+  color: #ff4500;
+}
+
+h3:nth-of-type(odd) a {
+  color: #1ead10;
+}
+a {
+  text-decoration: none;
+}
+h3>a::before {
+content: '\1F517';
+font-size: 30px; /*размер текста*/
+color: #08c2b2; /*цвет текста*/
+margin: 5px;   /*Внешние отступы*/
+}
+a[href^="#"]::before {
+  content: '\1F516';
+  font-size: 30px; /*размер текста*/
+  color: #ffa500; /*цвет текста*/
+  margin: 5px; /*Внешние отступы*/
+}
+p:not(:nth-of-type(2))::first-line {
+  font-style: italic; /*курсив*/
+  font-weight: bold; /*полужирный*/
+  font-size: larger;
+}
+h2::after {
+  content: '\1F50D';
+  font-size: 35px; /*размер текста*/
+  margin-left: 15px;    
+}
+h2::first-letter {
+  font-size: larger; /* шрифт крупнее чем шрифт родительского  элемента */
+  margin-left: 30px; /*Внешние отступы*/
+}
+p:nth-of-type(2)::before{
+  content: '\26A0';
+  font-style: normal;
+  margin: 10px;
+  color: #ffa500;
+  font-size: 34px;
+}
