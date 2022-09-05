@@ -1,0 +1,44 @@
+h1,h2 {
+    font-family: georgia;     /*гарнитура шрифта*/
+	color: #9b3402;            /*цвет шрифта*/
+	text-align: center;        /*выравнивание текста*/
+	margin-top: 40px;       /*отступ сверху*/
+}
+h1 {
+    text-shadow: 1px 1px 1px #fff, 2px 2px 1px #555;
+}
+p {
+    font-family: helvetica, tahoma, verdana; /*гарнитура шрифта*/
+    font-size: 14pt;  /*размер символов*/
+    margin: 15px;  /*внешний отступ */
+}
+h2 + img {
+    width: 250px;    /*ширина 250px; */
+    float: left;          /*обтекание по левому краю*/
+    margin:10px;   /*внешний отступ 10 px; */
+    padding: 5px;   /*поля 5px */
+    border: 1px solid #777;   /*рамка вокруг картинки*/
+    background-color: #fff;   /*фоновый цвет картинки*/
+    box-shadow: 3px 3px 1px #ccc;    /*тень изображения*/
+}
+img {
+    width: 480px;       /*ширина 480px; */
+    display: block;      /*отображение в виде блочного элемента*/
+    margin: 15px auto; /*отступ сверху 15 px, слева и справа-auto*/
+    padding: 10px;         /*поля 10px*/
+    border: 1px solid #777;   /*рамка вокруг картинки*/
+    background-color: #fff;   /*фоновый цвет картинки*/
+    box-shadow: 3px 3px 1px #ccc; /*тень изображения*/
+}
+h2 + img + p {
+    color: #0254a6;     /*цвет символов*/
+    font-size: 14pt;     /*размер шрифта*/
+    font-family: helvetica, tahoma, verdana;    /*гарнитура шрифта*/
+    line-height:1.4   /* высота строки*/
+}
+ul> a {
+    color: #0254a6;     /*цвет символов*/
+    font-size: 14pt;     /*размер шрифта*/
+    font-family: helvetica, tahoma, verdana;    /*гарнитура шрифта*/
+    line-height:1.4   /* высота строки*/
+}
