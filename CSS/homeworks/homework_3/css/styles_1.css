@@ -1,0 +1,15 @@
+p {
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 15px;
+}
+.p_1 {
+    background-color: orange;
+    text-indent: 5px;
+}
+.p_2 {
+    background-color: violet;
+    text-indent: 10px;
+    letter-spacing: 4px;
+    line-height: 25px;
+}
