@@ -1,0 +1,18 @@
+p {
+    width: 500px;
+    padding: 1em;
+    margin: 2em;
+    font-family: "gabriola";
+    font-size: 1.2em;
+    border: 1px solid;
+}
+#p_1 {
+    font-style: normal;
+}
+#p_2 {
+    font-style: italic;
+}
+#p_3 {
+    font-weight: 500;
+    font-variant: small-caps;
+}

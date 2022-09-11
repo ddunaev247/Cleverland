@@ -1,0 +1,25 @@
+p {
+    width: 500px;
+    padding: 1em;
+    margin: 0px auto 15px;
+}
+#p_1 {
+    background-color: orange;
+    text-align: left;
+}
+#p_2 {
+    background-color: violet;
+    text-align: right;
+}
+p > span {
+    text-decoration: underline;
+} 
+.first,#p_2 > span:nth-of-type(1) {
+    text-decoration-style: dotted;
+}
+.second, #p_2 > span:nth-of-type(2) {
+    text-decoration-style: dashed;
+}
+.third, #p_2 > span:nth-of-type(3) {
+    text-decoration-style: wavy;
+}
