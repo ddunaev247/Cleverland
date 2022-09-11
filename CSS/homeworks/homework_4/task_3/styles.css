@@ -1,0 +1,24 @@
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+th, td {
+    width:120px;
+    padding:15px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, serif;
+}
+td {
+    color: black;
+    background-color: #d3ff9a;
+    font-weight: 600;
+}
+thead > tr > th:nth-child(n+2) {
+    background: linear-gradient(to top,  #8af004,#6ab623 );
+}
+tbody > tr > th {
+    background: linear-gradient(to top,  #8af004,#6ab623 );
+}
