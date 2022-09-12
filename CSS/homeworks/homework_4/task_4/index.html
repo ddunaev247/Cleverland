@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: left;
+        }
+        #wrap {
+            position: relative;
+            bottom: 0%;
+            left: 0%;
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            border-top-left-radius: 10px;
+        }
+        #wrap::before {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            content: '';
+            width: 15px;
+            height: 15px;
+            background-color:  rgb(131, 31, 31);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px ;
+        }
+        #tape {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            text-align: center;
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            border-top-right-radius: 10px;
+            font-size: 24px;
+            font-weight: 600;
+            color: white;
+        }
+        #tape::before {
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 40px;
+            border-color: red transparent transparent transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="wrap"></div>
+        <div id="tape">50% </div>
+    </div>
+    </div>
+</body>

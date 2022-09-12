@@ -1,0 +1,13 @@
+.div_1 {
+    width: 400px;
+    height: 10vh;
+    background-color: yellow;
+    margin-bottom: 10px;
+}
+.div_2 {
+    width: 300px;
+    height: 200px;
+    max-height: 100px;
+    min-width: 400px;
+    background-color: violet;
+}
