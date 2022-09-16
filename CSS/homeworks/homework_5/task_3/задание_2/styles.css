@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap { 
+    position: relative;
+    background-color: #a5ab91;
+    width: 650px;
+    height: 215px;
+    
+}
+.block_1 {
+    position: absolute;
+    background-color: #2a8c48;
+    text-align: center;
+    padding-top: 50px;
+    width: 467px;
+    height: 125px;
+    top: 45px;
+    left: 90px;
+    border-radius: 8px;
+    word-spacing: 20px;
+    z-index: 11;
+    
+}
+.block_2 {
+    width: 467px;
+    height: 125px;
+    position: absolute;
+    top: 62px;
+    left: 107px;
+    background-color: #800000;
+    border-radius: 8px;
+    z-index: 10;
+}

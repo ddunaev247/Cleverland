@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоды</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrap {
+            position: relative;
+            padding: 5px;
+        }
+        .block {
+            width: 100px;
+            display: inline-block;
+            text-align: center;
+        }
+        .block:hover {
+            box-shadow: 0 0 5px black;
+        }
+        .data {
+            background-color: rgb(37, 131, 225);
+            color: #fff;
+        }
+        .weather-img {
+            max-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="block">
+            <p class="data">31.08</p>
+            <img src="weather-sun.jpg" alt="weather-img" class="weather-img">
+            <p class="temp">+20&#176;</p>
+        </div>
+        <div class="block">
+            <p class="data">01.09</p>
+            <img src="weather-snow.jpg" alt="weather-img" class="weather-img">
+            <p class="temp">-3&#176;</p>
+        </div>
+        <div class="block">
+            <p class="data">02.09</p>
+            <img src="weather-blizzard.jpg" alt="weather-img" class="weather-img">
+            <p class="temp">-10&#176;</p>
+        </div>
+    </div>
+</body>
+</html>
