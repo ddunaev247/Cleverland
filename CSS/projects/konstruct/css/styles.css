@@ -10,7 +10,6 @@ body {
     width: 100%;
     max-width: 1440px;
     min-height: 100vh;
-    overflow: hidden;
     margin: 0 auto;
 }
 [class*="-container"] {
@@ -19,14 +18,9 @@ body {
     margin: 0 auto;
     padding: 0 16px;
 }
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .header-top {
     height: 100vh;
-    max-height: 768px;
+    min-height: 533px;
     background: url(../img/bg.jpg) center center/cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -44,6 +38,7 @@ body {
 .header-title {
     font-family: "Bebas Neue","Comic Sans MS", cursive;
     font-size: 60px;
+    line-height: 70px;
     letter-spacing: 6px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -61,23 +56,27 @@ body {
     text-transform: uppercase;
 }
 .header-nav {
-    padding: 24px;
     border: 1px solid #E6E6E6;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .menu {
     display: flex;
-    column-gap: 40px;
-    row-gap: 4px;
+    flex-direction: row;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
 .menu-link {
+    padding: 24px 16px;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 .menu-link:hover {
-    font-weight: 700;
     color: #00A4E5;
 }
 .about {
@@ -105,14 +104,11 @@ body {
 }
 .about-body {
     display: flex;
-    columns: 2;
+    justify-content: space-between;
+    column-gap: 20px;
 }
 .about-block-text {
-    width: calc(100%/2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-right: 76px;
+
 }
 .about-text-top {
     font-size: 20px;
@@ -120,22 +116,21 @@ body {
     line-height: 22px;
     color: #48555B;
     margin-bottom: 30px;
+    padding-right: 70px;
 }
 .about-text-top span {
     color: #16ACE8;
 }
 .about-text-bottom {
-    padding-right: 40px;
-    text-align: left;
     font-size: 12px;
     line-height: 24px;
     color: #48555B;
+    padding-right: 70px;
 }
 .about-columns {
-    width: calc(100%/2);
-    column-gap: 20px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    column-gap: 20px;
     padding-top: 28px;
     padding-left: 10px;
 }
@@ -150,6 +145,7 @@ body {
 }
 .column {
     max-height: 224px;
+    width: 100%;
     max-width: 140px;
     padding: 14px 50px 0 14px;
 }
