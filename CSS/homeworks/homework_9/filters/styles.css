@@ -1,0 +1,39 @@
+.wrap {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto
+}
+.blur:hover {
+    filter: blur(3px);
+}
+.brightness:hover {
+    filter: brightness(40%);
+}
+.contrast:hover {
+    filter: contrast(10%);
+}
+.grayscale:hover {
+    filter: grayscale(75%);
+}
+.hue-rotate:hover {
+    filter: hue-rotate(270deg);
+}
+.invert:hover {
+    filter: invert(100%);
+}
+.opacity:hover {
+    filter: opacity(50%);
+}
+.saturate:hover {
+    filter: saturate(300%);
+}
+.sepia:hover {
+    filter: sepia(100%);
+}
+
+
+
