@@ -5,6 +5,8 @@ body {
 .wrap {
     max-width: 696px;
     text-align: center;
+    margin: 0 auto;
+    max-height: 100vh;
 }
 .top-block {
     background-color: #095c5c;

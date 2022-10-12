@@ -1,0 +1,51 @@
+[class*=square] {
+    width: 100%;
+    max-width: 60px;
+    min-height: 60px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+.square-1 {
+    animation: myAnimation-1 3s linear 3;
+}
+@keyframes myAnimation-1 {
+from {transform: translate(0, 0);}
+to { transform: translate(300px, 0);}
+}
+.square-2 {
+    animation: myAnimation-2 3s linear infinite;
+}
+@keyframes myAnimation-2 {
+    from {transform: translate(0, 0);}
+    to { transform: translate(500px, 0);}
+}
+.square-3 {
+    animation: myAnimation-3 5s linear infinite;
+}
+@keyframes myAnimation-3 {
+    from { background-color: #fff;}
+    to { background-color: #ff0000;}
+}
+.square-4 {
+    animation: myAnimation-4 5s linear infinite;
+}
+@keyframes myAnimation-4 {
+    from { transform: translate(0, 0);}
+    25% { transform: translate(200px, 0);}
+    50% { transform: translate(200px, 50px);}
+    75% { transform: translate(0, 50px);}
+    to { transform: translate(0, 0);}
+}
+.square-5 {
+    max-width: 100px;
+    margin-top: 100px;
+    animation: myAnimation-5 3s linear infinite paused;
+}
+.square-5:hover {
+    animation-play-state: running;
+}
+@keyframes myAnimation-5 {
+    from { max-width: 100px;}
+    50% { max-width: 500px;}
+    to { max-width: 100px;}
+}
