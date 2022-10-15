@@ -9,7 +9,7 @@
         padding: 0 16px;
     }
     .about {
-        padding: 58px 0 58px 0;
+        padding: 58px 0;
     }
     .about-title {
         padding-bottom: 0;
@@ -31,6 +31,7 @@
     .services {
         display: flex;
         flex-direction: column;
+        padding-bottom: 54px;
     }
     .services-head {
         display: flex;
@@ -51,6 +52,11 @@
         row-gap: 16px;
         align-items: stretch;
     }
+    .contacts {
+        justify-content: center;
+        max-height: 350px;
+        padding-top: 0px;
+    }
     .footer-subscribe-form{
         padding: 24px 0px;
         flex-direction: column;
@@ -62,9 +68,11 @@
 @media (max-width: 767px) {
     [class*="-container"] {
         width: 100%;
-        max-width: 590px;
         margin: 0 auto;
         padding: 0 16px;
+    }
+    .header-container {
+        padding: 0 0 0 16px;
     }
     .header-menu {
         display: none;
@@ -81,11 +89,9 @@
         width: 100%;
         max-width: 98%;
         margin: 0 auto;
-        padding: 0 16px;
     }
     .button {
         max-width: 320px;
-        /* transition: transform 0.5s ease; */
     }
     .services-head-section {
         flex-wrap: wrap;
@@ -119,11 +125,6 @@
     .services {
         padding-bottom: 64px;
     }
-    .contacts {
-        justify-content: center;
-        max-height: 350px;
-        padding-top: 0px;
-    }
     .footer-subscribe-form-title {
         padding-bottom: 18px;
     }
@@ -141,10 +142,5 @@
     }
     .footer-socials-link img {
         width: 24px;
-    }
-}
-@media (max-width: 359px) {
-    * {
-        display: none;
     }
 }
