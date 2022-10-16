@@ -1,0 +1,42 @@
+.container {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+.container > div {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.header {
+    grid-column: span 5;
+    grid-row: span 1;
+    background: rgb(13, 247, 36);
+    order: 1;
+}
+.menu {
+    grid-column: span 1;
+    grid-row: span 5;
+    background: rgb(241, 253, 0);
+    order: 3;
+}
+.content {
+    grid-column: span 4;
+    grid-row: span 5;
+    background: rgb(195, 15, 255);
+    order: 2;
+}
+.footer {
+    grid-column: span 5;
+    grid-row: span 1;
+    background: rgb(106, 0, 255);
+    order: 4;
+}

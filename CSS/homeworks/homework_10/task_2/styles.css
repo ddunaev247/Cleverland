@@ -1,0 +1,50 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+}
+[class*='block']{
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: aliceblue;
+}
+.block-1 {
+    grid-column: span 2;
+    grid-row: span 1;
+    background: rgb(20, 168, 92);
+}
+.block-2 {
+    background: rgb(6, 222, 246);
+}
+.block-3 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background: rgb(255, 205, 251);
+}
+.block-4 {
+    grid-column: span 2;
+    grid-row: span 1;
+    background: rgb(91, 0, 0);
+}
+.block-5 {
+    background: rgb(248, 150, 150);
+}
+.block-6 {
+    background: rgb(162, 32, 255);
+}
+.block-7 {
+    background: rgb(30, 234, 159);
+}
+.block-8 {
+    background: rgb(68, 0, 255);
+}
+.block-9 {
+    background: rgb(255, 63, 63);
+}
