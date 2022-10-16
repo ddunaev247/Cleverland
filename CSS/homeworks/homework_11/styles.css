@@ -15,7 +15,10 @@ body {
     grid-column: span 12;
     grid-row: span 4;
     min-height: 200px;
-    background: #095c5c url(./img/1420.jpg) center center/cover no-repeat;
+    background-image: url(img/1420.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #095c5c;
 }
 .nav {
     grid-column: span 12;
@@ -57,12 +60,11 @@ body {
     .header {
         grid-column: span 12;
         grid-row: span 4;
-        background: url(./img/1024.jpg) center center/cover no-repeat;
-    }
+        background-image: url(img/1024.jpg);}
 }
 @media (max-width:1024px){
     .header {
-        background: url(./img/768.jpg) center center/cover no-repeat;
+        background-image: url(img/768.jpg);
     }
 }
 @media (max-width:768px){
@@ -71,9 +73,9 @@ body {
         grid-template-rows: repeat(14, 1fr);
     }
     .header {
-        background: url(./img/480.jpg) center center/cover no-repeat;
         grid-column: span 1;
         grid-row: span 4;
+        background-image: url(img/480.jpg);
     }
     .nav {
         grid-column: span 1;
@@ -100,6 +102,6 @@ body {
 }
 @media (max-width: 480px){
     .header {
-        background: url(./img/320.jpg) center center/cover no-repeat;
+        background-image: url(img/320.jpg);
     }
 }
