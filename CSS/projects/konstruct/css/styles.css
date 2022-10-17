@@ -27,6 +27,7 @@ body {
     height: 100vh;
     min-height: 533px;
     background: url(../img/bg.jpg) center center/cover no-repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
