@@ -1,6 +1,4 @@
-html {
-    scroll-behavior: smooth;
-}
+
 body {
     font-family: "Open Sans",'Segoe UI', Tahoma, sans-serif;
     font-size: 14px;
@@ -71,7 +69,7 @@ body {
     top: 0;
     background-color: #FFFFFF;
     border: 1px solid #E6E6E6;
-    z-index: 10;
+    z-index: 11;
 }
 .header-container {
     display: flex;
@@ -96,10 +94,7 @@ body {
 }
 .header-menu-burger {
     display: none;
-    padding: 24px;
-}
-.header-menu-burger:hover, .header-menu-burger:active {
-    box-shadow: 0px 4px 9px -7px rgba(34, 60, 80, 0.53) inset;
+    padding: 32px;
 }
 /* ======================= */
 .about {
@@ -230,16 +225,20 @@ body {
     transform: translate(0, 4px);
     box-shadow: none;
 }
-.services-columns {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    column-gap: 26px;
+.services-swiper {
+    min-width: 0;
+}
+.swiper-wrapper {
+}
+.services-swiper-wrap {
+}
+.swiper-slide {
 }
 .services-column {
     flex: 1 1 295px;
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
     padding: 38px 22px;
     border: 1px solid #E6E6E6;
 }

@@ -1,6 +1,3 @@
- /* Landscape - телефоны */
-/* @media (max-width: 480px)  */
-
 @media( max-width: 979px) {
     [class*="-container"] {
         width: 100%;
@@ -47,11 +44,12 @@
     .services-head-section-text {
         max-width: 100%;
     }
-    .services-columns {
+    
+    /* .services-columns {
         flex-direction: column;
         row-gap: 16px;
         align-items: stretch;
-    }
+    } */
     .contacts {
         justify-content: center;
         max-height: 350px;
@@ -66,30 +64,66 @@
     }
 }
 @media (max-width: 767px) {
-    [class*="-container"] {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 16px;
+    body.noscroll {
+        overflow: hidden;
+    }
+    .header.noborder {
+        border: none;
     }
     .header-container {
         padding: 0 0 0 16px;
+    }
+    .header::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        display: block;
+        content: '';
+        background: #ffffff;
+        z-index: 12;
+    }
+    .header-logo {
+        z-index: 15;
     }
     .header-menu {
         display: none;
     }
     .header-menu-burger {
         display: block;
+        background-image: url(../icons/menu.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 15;
+    }
+    .header-menu.menu.active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: rgb(255, 255, 255);
+        /* transition: all 1s ease 0s; */
+        padding-top: 70px;
+        padding-left: 16px;
+        overflow: auto;
+    }
+    .menu-link {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .header-menu-burger.active {
+        z-index: 15;
+        background-image: url(../icons/close.svg);
     }
     .footer-container {
         gap: 16px;
     }
 }
 @media (max-width: 520px) {
-    [class*="-container"] {
-        width: 100%;
-        max-width: 98%;
-        margin: 0 auto;
-    }
     .button {
         max-width: 320px;
     }
