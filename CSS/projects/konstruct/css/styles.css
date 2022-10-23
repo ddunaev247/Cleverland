@@ -225,14 +225,17 @@ body {
     transform: translate(0, 4px);
     box-shadow: none;
 }
-.services-swiper {
-    min-width: 0;
+.swiper {
+    width: 100%;
+    height: 100%;
 }
 .swiper-wrapper {
+    min-width: 0;
 }
 .services-swiper-wrap {
 }
 .swiper-slide {
+    padding: 2px;
 }
 .services-column {
     flex: 1 1 295px;

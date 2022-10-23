@@ -54,22 +54,22 @@ if (links.length > 0) {
 }
 
 const swiper = new Swiper(".services-swiper", {
-    observer:true,
-    observeParents:true,
+    slidesPerView: "auto",
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
     breakpoints : {
         360: {
-         slidesPerView: 1,
-         spaceBetween: 12,
+        //  slidesPerView: 1,
+         spaceBetween: 8,
         },
         978: {
-         slidesPerView: 3,
+        //  slidesPerView: 3,
          spaceBetween: 26,
         }
     }
+
 //   pagination: {
 //     el: '.swiper-pagination',
 //   },
