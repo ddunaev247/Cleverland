@@ -1,0 +1,18 @@
+let variableNum1 = 12.5;
+let variableNum2 = 245;
+let variableStr = "Hello";
+let variableUn = undefined;
+let variableNull = null;
+let variableBool = true;
+let variableArr = [1,5,7,12,3,"значение"];
+let variableObj = {'Вася':'Имя'};
+let variableFun = function() {};
+console.log(typeof variableNum1);
+console.log(typeof variableNum2);
+console.log(typeof variableStr);
+console.log(typeof variableUn);
+console.log(typeof variableNull);
+console.log(typeof variableBool);
+console.log(typeof variableArr);
+console.log(typeof variableObj);
+console.log(typeof variableFun);
