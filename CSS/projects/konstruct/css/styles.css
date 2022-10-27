@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Open Sans",'Segoe UI', Tahoma, sans-serif;
     font-size: 14px;
@@ -32,6 +34,9 @@ body {
     align-items: center;
     text-align: center;
     padding: 40px 0px 70px;
+}
+.top-screen.novisible {
+    display: none;
 }
 .top-screen-titles {
     display: flex;
@@ -95,6 +100,7 @@ body {
 .header-menu-burger {
     display: none;
     padding: 32px;
+    cursor: pointer;
 }
 /* ======================= */
 .about {
@@ -225,17 +231,11 @@ body {
     transform: translate(0, 4px);
     box-shadow: none;
 }
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-.swiper-wrapper {
+.services-swiper {
     min-width: 0;
 }
-.services-swiper-wrap {
-}
-.swiper-slide {
-    padding: 2px;
+.swiper-button-prev::after, .swiper-button-next::after {
+    color: #00A4E5;
 }
 .services-column {
     flex: 1 1 295px;
