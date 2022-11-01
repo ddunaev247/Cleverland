@@ -45,7 +45,10 @@
         max-width: 100%;
     }
     .services-swiper {
-        max-width: 606px;
+        max-width: 716px;
+    }
+    .services-column {
+        flex: 1 0 350px;
     }
     .contacts {
         justify-content: center;
@@ -101,6 +104,12 @@
         z-index: 15;
         background-image: url(../icons/close.svg);
     }
+    .services-swiper {
+        max-width: 580px;
+    }
+    .services-column {
+        flex: 1 0 282px;
+    }
     .footer-container {
         gap: 16px;
     }
@@ -110,7 +119,7 @@
         max-width: 420px;
     }
     .services-column {
-        flex: 1 1 420px;
+        flex: 1 0 420px;
     }
 }
 @media (max-width: 520px) {
@@ -159,7 +168,7 @@
         max-width: 360px;
     }
     .services-column {
-        flex: 1 1 360px;
+        flex: 1 0 360px;
     }
     .footer-subscribe-form-title {
         padding-bottom: 18px;
@@ -185,6 +194,6 @@
         max-width: 320px;
     }
     .services-column {
-        flex: 1 1 320px;
+        flex: 1 0 320px;
     }
 }

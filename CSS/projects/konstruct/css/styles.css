@@ -234,6 +234,11 @@ body {
 .services-swiper {
     min-width: 0;
 }
+.swiper-slide {
+    height: auto;
+    align-self: stretch;
+}
+
 .swiper-button-prev::after, .swiper-button-next::after {
     color: #00A4E5;
 }

@@ -1,6 +1,9 @@
 "use strict"
 const swiper = new Swiper(".services-swiper", {
     slidesPerView: "auto",
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -16,6 +19,7 @@ const swiper = new Swiper(".services-swiper", {
         654: {
             enabled: true,
             spaceBetween: 8,
+            allowTouchMove: true,
         },
         978: {
             spaceBetween: 26,
