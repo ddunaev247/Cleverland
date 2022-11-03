@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konstruct</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/mobile.css">
-    </head>
+    <link rel="stylesheet" href="./css/media-styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="./js/slider.js"></script>
+    <script defer src="./js/hamb-menu.js"></script>
+    
+    <title>Konstruct</title>
+</head>
 <body>
     <div class="wrap">
         <div class="top-screen" id="home">
-            <a href="#home" class="top-screen-logo"><img src="./icons/logo_white.svg" alt="logo"></a>
+            <a href="#!" class="top-screen-logo"><img src="./icons/logo_white.svg" alt="logo"></a>
             <div class="top-screen-titles">
                 <h1 class="top-screen-title">partner with konstruct</h1>
                 <h3 class="top-screen-subtitle">An award-winning construction management firm</h3>
@@ -44,13 +50,12 @@
                     </li>
                 </ul>
                 <div class="header-menu-burger">
-                    <img src="./icons/menu.svg" alt="menu-burger-icon">
                 </div>
             </nav>    
         </header>
         <main class="main">
             <div class="main-container">
-                <section class="about" id="about">
+                <section class="about"  id="about">
                     <div class="about-title title">OUR STORY</div>
                     <div class="about-body">
                         <div class="about-block-text">
@@ -87,22 +92,27 @@
                             <a href="#!" class="services-head-section-btn button">ALL SERVICES</a>
                         </div>
                     </div>
-                    <div class="services-columns">
-                        <div class="services-column">
-                            <div class="services-column-image"><img src="./icons/service-icon-1.svg" alt="service-icon"></div>
-                            <div class="services-column-title">PROJECT AND CONSTRUCTION MANAGEMENT</div>
-                            <div class="services-column-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</div>
+                    <div class="services-swiper swiper">
+                        <div class="services-swiper-wrap swiper-wrapper">
+                            <div class="services-column swiper-slide">
+                                <div class="services-column-image"><img src="./icons/service-icon-1.svg" alt="service-icon"></div>
+                                <div class="services-column-title">PROJECT AND CONSTRUCTION MANAGEMENT</div>
+                                <div class="services-column-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat..</div>
+                            </div>
+                            <div class="services-column swiper-slide">
+                                <div class="services-column-image"><img src="./icons/service-icon-2.svg" alt="service-icon"></div>
+                                <div class="services-column-title">STRUCTURE AUDIT AND MAINTENANCE</div>
+                                <div class="services-column-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</div>
+                            </div>    
+                            <div class="services-column swiper-slide">
+                                <div class="services-column-image"><img src="./icons/service-icon-1.svg" alt="service-icon"></div>
+                                <div class="services-column-title">PROJECT AND CONSTRUCTION MANAGEMENT</div>
+                                <div class="services-column-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</div>
+                            </div>
                         </div>
-                        <div class="services-column">
-                            <div class="services-column-image"><img src="./icons/service-icon-2.svg" alt="service-icon"></div>
-                            <div class="services-column-title">STRUCTURE AUDIT AND MAINTENANCE</div>
-                            <div class="services-column-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</div>
-                        </div>
-                        <div class="services-column">
-                            <div class="services-column-image"><img src="./icons/service-icon-3.svg" alt="service-icon"></div>
-                            <div class="services-column-title">FACTORY CONSTRUCTION AND MODELING</div>
-                            <div class="services-column-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</div>
-                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </section>
             </div>
