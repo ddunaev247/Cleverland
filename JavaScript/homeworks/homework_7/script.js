@@ -79,6 +79,6 @@
 // console.log(factorial(5))
 
 // task 4
-const cashMachine = (price, cash) => cash>=price?`Сдача: ${cash-price}$`: 'Недостаточная сумма для оплаты'
+const cashMachine = (price, cash) => cash>=price?()=>`Сдача: ${cash-price}$`: ()=>'Недостаточная сумма для оплаты'
 console.log(cashMachine(573,580))
 
