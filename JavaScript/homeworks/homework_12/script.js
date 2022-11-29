@@ -3,8 +3,8 @@
 let dateNow = new Date()
 console.log(`${dateNow.getFullYear()}-${dateNow.getMonth()}-${dateNow.getDate()}`)
 //Задание 2
-const timeStamp = new Date(0)
-let minuteWithTimeStamp = (dateNow - timeStamp) / 60000
+const timeStamp = Date.now()
+let minuteWithTimeStamp = timeStamp / 60000
 console.log(minuteWithTimeStamp.toFixed(0))
 //Задание 3
 let taskDate = Date.parse('2022-10-27')
@@ -15,7 +15,7 @@ let sum = 0
 for (let i = 1; i < 1000000; i++) {
     sum += i
 }
-let end = Date.now() // заканчиваем отсчёт времени
+let end = Date.now()
 console.log(end - start + 'ms')
 //Задание 5
 const months = [
