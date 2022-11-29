@@ -3,7 +3,7 @@
 let dateNow = new Date()
 console.log(`${dateNow.getFullYear()}-${dateNow.getMonth()}-${dateNow.getDate()}`)
 //Задание 2
-const timeStamp = Date.now()
+let timeStamp = Date.now()
 let minuteWithTimeStamp = timeStamp / 60000
 console.log(minuteWithTimeStamp.toFixed(0))
 //Задание 3
