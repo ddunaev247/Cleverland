@@ -34,33 +34,33 @@
 // Посчитайте сколько человек  получают зарплату не меньше средней.  Добавьте в объект salary свойство, содержащее эту информацию.
 
 let salary = {
-    'Fillis':1200,
-    'Smitt':1850,
-    'Roks':2000,
-    'Kolins':1100
+    'Fillis': 1200,
+    'Smitt': 1850,
+    'Roks': 2000,
+    'Kolins': 1100
 }
-let salarysClon = Object.assign({},salary)
+let salarysClon = Object.assign({}, salary)
 const getBigSalary = obj => {
     let bigSalary = 0
     let employee = ''
-    Object.entries(obj).forEach(item=> {
-        if (item[1]>bigSalary){
+    Object.entries(obj).forEach(item => {
+        if (item[1] > bigSalary) {
             bigSalary = item[1]
             employee = item[0]
-            }
         }
+    }
     )
     return `${employee} - ${bigSalary} руб`
 }
 const getAverageSalary = obj => (Object.values(obj)
-    .filter(item=>!isNaN(item))
-    .reduce((sum, current) => sum + current, 0)/4).toFixed(2)
+    .filter(item => !isNaN(item))
+    .reduce((sum, current) => sum + current, 0) / (Object.values(obj).length)).toFixed(2)
 const getAverageSalaryEmployees = (obj, averageSalary) => {
-    return Object.entries(obj).filter(item=>item[1]>=averageSalary).length
+    return Object.entries(obj).filter(item => item[1] >= averageSalary).length
 }
 salary.getBigSalary = getBigSalary(salarysClon)
 salary.getAverageSalary = getAverageSalary(salarysClon)
-salary.getAverageSalaryEmployees = getAverageSalaryEmployees(salarysClon,salary.getAverageSalary)
+salary.getAverageSalaryEmployees = getAverageSalaryEmployees(salarysClon, salary.getAverageSalary)
 
 console.log(salary.getBigSalary)
 console.log(salary.getAverageSalary)

@@ -47,7 +47,7 @@ const getBigSalary = obj => {
 }
 const getAverageSalary = obj => (Object.values(obj)
     .filter(item=>!isNaN(item))
-    .reduce((sum, current) => sum + current, 0)/4).toFixed(2)
+    .reduce((sum, current) => sum + current, 0)/(Object.values(obj).length)).toFixed(2)
 const getAverageSalaryEmployees = (obj, averageSalary) => {
     return Object.entries(obj).filter(item=>item[1]>=averageSalary).length
 }
