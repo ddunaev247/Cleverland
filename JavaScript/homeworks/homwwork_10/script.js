@@ -20,6 +20,6 @@ console.log(arr.sort((a,b)=> a-b))
 console.log(arr.sort((a,b)=> b-a))
 console.log(arr.reverse())
 console.log(arr.reduce((pr,cur)=>pr*cur))
-console.log(arr.reduce((pr,cur)=>pr+cur,0)/arr.length)
+console.log(arr.reduce((pr,cur)=>pr+cur,0)/arr.length) 
 
 
