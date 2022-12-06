@@ -1,7 +1,7 @@
 'use scrict'
 //Задание 1
 let dateNow = new Date()
-console.log(`${dateNow.getFullYear()}-${dateNow.getMonth()}-${dateNow.getDate()}`)
+console.log(`${dateNow.getFullYear()}-${dateNow.getMonth()}-${dateNow.getd class='col'ate()}`)
 //Задание 2
 let timeStamp = Date.now()
 let minuteWithTimeStamp = timeStamp / 60000
