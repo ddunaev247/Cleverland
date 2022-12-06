@@ -10,5 +10,3 @@ rows.forEach(item => {
     count++;
     count2--;
 });
-
-console.log(rows);
