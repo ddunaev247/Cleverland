@@ -40,13 +40,12 @@ buttonStart.onclick = () => {
     inputEnd = document.querySelector('.end');
     if (inputBegin.value < inputEnd.value) {
         buttonsClassSwitcher();
-        if (inputBegin.classList.contains('active')) {
-            inputBegin.classList.remove('active');
-            inputEnd.classList.remove('active');
-            inputBegin.classList.add('hidden');
-            inputEnd.classList.add('hidden');
-            counter(inputEnd.value, inputBegin.value);
-        }
+        inputBegin.classList.contains('active');
+        inputBegin.classList.remove('active');
+        inputEnd.classList.remove('active');
+        inputBegin.classList.add('hidden');
+        inputEnd.classList.add('hidden');
+        counter(inputEnd.value, inputBegin.value);
     } else if (!!inputEnd.value && !!inputBegin.value) {
         buttonsClassSwitcher();
         counter(cashEnd, cashStart);
