@@ -46,7 +46,10 @@ buttonStart.onclick = () => {
             inputBegin.classList.add('hidden');
             inputEnd.classList.add('hidden');
             counter(inputEnd.value, inputBegin.value);
-        } else counter(cashEnd, cashStart);
+        }
+    } else if (!!inputEnd.value && !!inputBegin.value) {
+        buttonsClassSwitcher();
+        counter(cashEnd, cashStart);
     } else {
         inputBegin.value = 0;
         inputEnd.value = 0;
@@ -58,6 +61,7 @@ buttonPause.onclick = () => {
     console.log('stop');
 };
 buttonReset.onclick = () => {
+    clearInterval(timerID);
     inputBegin.classList.add('active');
     inputEnd.classList.add('active');
     inputBegin.classList.remove('hidden');
