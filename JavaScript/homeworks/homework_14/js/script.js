@@ -26,8 +26,7 @@ ad.forEach(item => item.remove());
 genre.textContent = 'драма';
 poster.style.backgroundImage = `url('img/bg.jpg')`;
 filmList.innerHTML = '';
-movieDB.movies.sort();
-movieDB.movies.forEach((film, index) => {
+movieDB.movies.sort().movies.forEach((film, index) => {
     filmList.innerHTML += `<li class="promo__interactive-item">${index + 1} ${film}
         <div class="delete"></div>
     </li>
