@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+.col {
+    border: 1px solid #000000;
+    padding: 14px 152px 16px 8px;
+    font-size: 48px;
+    font-weight: 700;
+}

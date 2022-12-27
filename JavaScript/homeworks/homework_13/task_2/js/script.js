@@ -1,0 +1,10 @@
+'use strict';
+const redBlock = document.getElementById('first');
+redBlock.style.backgroundColor = 'red';
+const blueBlock = document.getElementById('second');
+blueBlock.style.backgroundColor = 'blue';
+const yellowBlocks = document.getElementsByClassName('yellow');
+yellowBlocks[0].style.backgroundColor = 'yellow';
+yellowBlocks[yellowBlocks.length - 1].style.backgroundColor = 'yellow';
+const greenBlock = document.getElementsByTagName('div');
+greenBlock[3].style.backgroundColor = 'green';
