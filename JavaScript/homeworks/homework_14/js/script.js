@@ -1,60 +1,35 @@
-let start, end, memNum;
-let countDiv;
-let intervalID;
-let isLaunched = false;
-const inputStart = document.querySelector('.begin');
-const inputEnd = document.querySelector('.end');
-const buttonCounter = document.querySelector('.button-counter');
-const formCounter = document.querySelector('.form');
-const buttonReset = document.querySelector('.reset');
+/* Задания на урок:
 
-const resetState = () => {
-    clearInterval(intervalID);
-    memNum = 0;
-    inputStart.value = '';
-    inputEnd.value = '';
-    countDiv = document.querySelector('.count');
-    countDiv.innerHTML = 0;
-    buttonCounter.innerHTML = 'Start';
-    buttonCounter.setAttribute('disabled', 'disabled');
+1) Удалить все рекламные блоки со страницы (правая часть сайта)
+
+2) Изменить жанр фильма, поменять "комедия" на "драма"
+
+3) Изменить задний фон постера с фильмом на изображение "bg.jpg". Оно лежит в папке img.
+Реализовать только при помощи JS
+
+4) Список фильмов на странице сформировать на основании данных из этого JS файла.
+Отсортировать их по алфавиту 
+
+5) Добавить нумерацию выведенных фильмов */
+
+'use strict';
+const movieDB = {
+    movies: ['Логан', 'Лига справедливости', 'Ла-ла лэнд', 'Одержимость', 'Скотт Пилигрим против...'],
 };
-const intervalCount = num => {
-    countDiv = document.querySelector('.count');
-    intervalID = setInterval(() => {
-        if (num <= end) {
-            countDiv.innerHTML = num++;
-            memNum = num;
-        } else resetState();
-    }, 1000);
-};
-const counter = () => {
-    countDiv = document.querySelector('.count');
-    if (countDiv === null) formCounter.insertAdjacentHTML('afterbegin', `<div class="count"></div>`);
-    if (isLaunched === false) {
-        isLaunched = true;
-        if (memNum) {
-            intervalCount(memNum);
-        } else {
-            intervalCount(start);
-        }
-        buttonCounter.innerHTML = 'Pause';
-    } else {
-        clearInterval(intervalID);
-        isLaunched = false;
-        buttonCounter.innerHTML = 'Start';
-    }
-};
-inputStart.addEventListener('input', e => {
-    start = +e.target.value;
-    if (start !== undefined && start < end) {
-        buttonCounter.removeAttribute('disabled');
-    } else buttonCounter.setAttribute('disabled', 'disabled');
+
+const ad = document.querySelectorAll('.promo__adv img');
+const genre = document.querySelector('.promo__genre');
+const poster = document.querySelector('.promo__bg');
+const filmList = document.querySelector('.promo__interactive-list');
+
+ad.forEach(item => item.remove());
+genre.textContent = 'драма';
+poster.style.backgroundImage = `url('img/bg.jpg')`;
+filmList.innerHTML = '';
+movieDB.movies.sort();
+movieDB.movies.forEach((film, index) => {
+    filmList.innerHTML += `<li class="promo__interactive-item">${index + 1} ${film}
+        <div class="delete"></div>
+    </li>
+`;
 });
-inputEnd.addEventListener('input', e => {
-    end = +e.target.value;
-    if (end !== undefined && start < end) {
-        buttonCounter.removeAttribute('disabled');
-    } else buttonCounter.setAttribute('disabled', 'disabled');
-});
-buttonCounter.addEventListener('click', counter);
-buttonReset.addEventListener('click', () => resetState());
